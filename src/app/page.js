@@ -13,7 +13,7 @@ import image150 from '../../public/images/image150.png';
 
 export default function Home() {
 
-  const textStyle = `font-semibold text-[64px] leading-[44px] flex  items-center`
+  const textStyle = `font-semibold text-[30px] md:text-[45px] lg:text-[60px] leading-[34px] md:leading-[44px] flex items-center uppercase`
 
   const [img1Width, setImg1Width] = useState("");
   const [img2Width, setImg2Width] = useState("");
@@ -24,26 +24,25 @@ export default function Home() {
   const [img7Width, setImg7Width] = useState("");
   const [img8Width, setImg8Width] = useState("");
 
-
   useEffect(() => {
     const animateImage = () => {
-      setImg1Width("300px"); // Initial width for animation
-      setImg2Width("400px")
-      setImg3Width("441px")
-      setImg4Width("299px")
-      setImg5Width("299px")
-      setImg6Width("300px")
+      setImg1Width("276px"); // Initial width for animation
+      setImg2Width("300px")
+      setImg3Width("391px")
+      setImg4Width("199px")
+      setImg5Width("199px")
+      setImg6Width("200px")
       setImg7Width("158px")
-      setImg8Width("151px")
+      setImg8Width("121px")
       setTimeout(() => {
         setImg1Width("371px"); // Final width after animation
         setImg2Width("539px")
         setImg3Width("260px")
         setImg4Width("203px")
         setImg5Width("203px")
-        setImg6Width("371px")
+        setImg6Width("271px")
         setImg7Width("207px")
-        setImg8Width("151px")
+        setImg8Width("121px")
       }, 2000); // Adjust the duration as needed
     };
 
@@ -54,24 +53,22 @@ export default function Home() {
 
   return (
     <main>
-      <div className="landing_page_div_1 min-h-[100vh] w-full py-[40px] px-[50px] bg-[#fff4df]">
+      <div className="landing_page_div_1 min-h-[100vh] w-full py-[40px] px-[20px] sm:px-[30px] lg:px-[50px] bg-[#fff4df] flex flex-col justify-center items-center relative">
         <Image
-          className="w-[406px] h-[50.94px] mb-[30px]"
+          className="w-[200px] sm:w-[300px] lg:w-[406px] h-auto mb-[30px] absolute top-[50px] left-[20px] sm:left-[30px] lg:left-[50px]"
           src={logo}
           alt="Astrix Logo"
         />
 
-        <div className="flex justify-center items-center">
-          <div className=" h-[80%] w-[75%] space-y-8">
+        <div className="my-[5rem] sm:my-[7rem] lg:my-[10rem] flex justify-center items-center h-full w-full">
+          <div className="w-[100%] lg:h-[80%] lg:w-[80%] space-y-8">
             <p className={textStyle}>
               we
-              <span style={{ width: img1Width, height: "71px", transition: 'width 1s', overflow: "hidden" }}>
+              <span className="mx-2" style={{ width: img1Width, height: "71px", transition: 'width 1s', overflow: "hidden" }}>
                 <Image
-                  className=" w-[371px] h-full "
+                  className="h-full w-full"
                   src={image143}
                   alt="Image 143"
-                  layout="fixed"
-
                 />
               </span>
               organize the
@@ -79,36 +76,29 @@ export default function Home() {
 
             <p className={textStyle}>
               connection
-              <span style={{ width: img2Width, height: "71px", transition: 'width 1s', overflow: "hidden" }}>
+              <span className="mx-2" style={{ width: img2Width, height: "71px", transition: 'width 1s', overflow: "hidden" }}>
                 <Image
-                  className={`h-full w-[${img2Width}]`}
+                  className="h-full w-full"
                   src={image144}
-                  alt="Image 143"
-                  layout="fixed"
-
+                  alt="Image 144"
                 />
               </span>
-
             </p>
 
             <p className={textStyle}>
-              <span style={{ width: img3Width, height: "71px", transition: 'width 1s', overflow: "hidden" }} >
+              <span className="mx-2" style={{ width: img3Width, height: "71px", transition: 'width 1s', overflow: "hidden" }} >
                 <Image
-                  className={`h-full w-[${img3Width}]`}
+                  className="h-full w-full"
                   src={image145}
-                  alt="Image 143"
-                  layout="fixed"
-
+                  alt="Image 145"
                 />
               </span>
               Between
-              <span style={{ width: img1Width, height: "71px", transition: 'width 1s', overflow: "hidden" }}>
+              <span style={{ width: img4Width, height: "71px", transition: 'width 1s', overflow: "hidden" }}>
                 <Image
-                  className={`h-full w-[${img4Width}]`}
+                  className="h-full w-full"
                   src={image146}
-                  alt="Image 143"
-                  layout="fixed"
-
+                  alt="Image 146"
                 />
               </span>
               Music
@@ -116,41 +106,35 @@ export default function Home() {
 
             <p className={textStyle}>
               Artist
-              <span style={{ width: img4Width, height: "71px", transition: 'width 1s', overflow: "hidden" }}>
+              <span className="mx-2" style={{ width: img4Width, height: "71px", transition: 'width 1s', overflow: "hidden" }}>
                 <Image
-                  className=" w-[371px] h-full "
+                  className="h-full w-full"
                   src={image147}
-                  alt="Image 143"
-                  layout="fixed"
-
+                  alt="Image 147"
                 />
               </span>
               Culture
-              <span style={{ width: img1Width, height: "71px", transition: 'width 1s', overflow: "hidden" }}>
+              <span className="mx-2" style={{ width: img1Width, height: "71px", transition: 'width 1s', overflow: "hidden" }}>
                 <Image
-                  className=" w-[371px] h-full "
+                  className="h-full w-full"
                   src={image148}
-                  alt="Image 143"
-                  layout="fixed"
-
+                  alt="Image 148"
                 />
               </span>
             </p>
 
             <p className={textStyle}>
-              <span style={{ display: 'inline-block', width: img7Width, height: "71px", transition: 'width 1s', overflow: "hidden" }}>
+              <span className="mx-2" style={{ display: 'inline-block', width: img7Width, height: "71px", transition: 'width 1s', overflow: "hidden" }}>
                 <Image
+                  className="h-full w-full"
                   src={image149}
                   alt="Image 149"
-                  width={371}
-                  height={61}
-                  style={{ width: '100%', height: '100%' }}
                 />
               </span>
               Art
-              <span>
+              <span className="mx-2" style={{ display: 'inline-block', width: img8Width, height: "71px", transition: 'width 1s', overflow: "hidden" }} >
                 <Image
-                  className="w-[200px] h-[71px]"
+                  className="h-full w-full"
                   src={image150}
                   alt="Image 150"
                 />
